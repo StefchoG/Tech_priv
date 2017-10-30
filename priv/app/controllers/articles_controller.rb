@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
   		@article = Article.new(article_params)
  
  		if @article.save
-    		redirect_to 'show'
+    		render 'show'
   		else
     		render 'new'
   		end
