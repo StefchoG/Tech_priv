@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
   		@article = Article.new(article_params)
  
  		if @article.save
-    		render 'show'
+    		redirect_to "http://stefotopriv.herokuapp.com/articles"
   		else
     		render 'new'
   		end
